@@ -13,12 +13,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
      
-      <body className={inter.className}>
-        <div className='flex flex-row bg-gradient-to-r from-sky-50 to-indigo-50'>
+      <body className='bg-white-200  {inter.className}'>
+        <div className='flex flex-row bg-gradient-to-r from-sky-50 to-indigo-50 min-h-screen'>
         <Sidebar/>
         <main className='basis-10/12'> {children} </main>
         </div>
         </body>
+       
       
     </html>
   )
